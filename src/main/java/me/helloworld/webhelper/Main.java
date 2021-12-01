@@ -38,7 +38,7 @@ public class Main {
         return "index";
     }
 
-    @RequestMapping("/convo/{id}")
+    @RequestMapping("/client-space/{id}")
     public void redirectConvo(@PathVariable("id") String convoId, HttpServletResponse httpResponse) throws IOException {
       httpResponse.sendRedirect("webexteams://im?space=" + convoId);
     }
